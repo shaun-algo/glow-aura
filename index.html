@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1c1417" />
+  <meta name="description" content="GlowAura brings together thoughtful skincare and fragrance for everyday rituals." />
+  <title>GlowAura | Beauty, made luminous</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&amp;family=Pinyon+Script&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/index.css" />
+  <link rel="stylesheet" href="assets/glow-intro.css" />
+  <link rel="stylesheet" href="assets/resizable-nav.css" />
+  <link rel="stylesheet" href="assets/flex-carousel.css" />
+  <link rel="stylesheet" href="assets/buttons.css" />
+  <noscript><style>.intro{display:none!important}.site-nav .h{visibility:visible!important}body.intro-lock{overflow:auto!important}.rv{opacity:1!important;transform:none!important}body:not(.reveal) .intro-reveal,body:not(.reveal) .navbar-toggler{visibility:visible!important;opacity:1!important;transform:none!important;pointer-events:auto!important}</style></noscript>
+</head>
+
+<body class="home-page intro-lock" data-theme="dark">
+  <div class="intro" id="intro" role="button" tabindex="0" aria-label="Glow Aura. Select to continue to the store.">
+    <div class="veil" id="veil" aria-hidden="true"><div class="glowbox"><span class="halo"></span></div></div>
+    <div class="stage" aria-hidden="true">
+      <div class="logo">
+        <span class="p emblem o o-emblem"></span>
+        <span class="p word o o-word"></span>
+        <span class="p sub o o-sub"></span>
+      </div>
+    </div>
+  </div>
+
+  <svg class="profile-avatar-sprite" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="profile-avatar-a1" viewBox="0 0 200 200">
+        <rect width="200" height="200" fill="#8f4c59" />
+        <path d="M56,152 C46,128 50,98 60,78 C68,52 92,42 114,46 C138,50 150,76 148,104 C147,128 154,142 152,152 Q128,144 100,152 Q76,144 56,152Z" fill="#0b0b0b" />
+        <path d="M44,200 C48,168 72,152 100,152 C128,152 152,168 156,200Z" fill="#e6a3a8" />
+        <rect x="90" y="118" width="20" height="38" fill="#f0a98b" />
+        <ellipse cx="100" cy="128" rx="13" ry="8" fill="#0b0b0b" />
+        <circle cx="71" cy="100" r="6" fill="#f0a98b" /><circle cx="129" cy="100" r="6" fill="#f0a98b" />
+        <ellipse cx="100" cy="98" rx="28" ry="33" fill="#f0a98b" />
+        <path d="M70,92 C70,66 92,56 114,62 C100,66 84,76 70,92Z" fill="#0b0b0b" />
+        <circle cx="90" cy="100" r="2.6" fill="#0b0b0b" /><circle cx="111" cy="100" r="2.6" fill="#0b0b0b" />
+        <path d="M101,102 L99,110 Q101,112 104,110" fill="none" stroke="#0b0b0b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M92,117 Q101,124 110,117" fill="none" stroke="#0b0b0b" stroke-width="1.8" stroke-linecap="round" />
+      </symbol>
+      <symbol id="profile-avatar-a2" viewBox="0 0 200 200">
+        <rect width="200" height="200" fill="#bb7079" />
+        <circle cx="120" cy="40" r="14" fill="#0b0b0b" />
+        <path d="M44,200 C48,172 72,156 100,156 C128,156 152,172 156,200Z" fill="#f3e9e2" />
+        <rect x="90" y="118" width="20" height="40" fill="#efb199" />
+        <ellipse cx="100" cy="128" rx="13" ry="8" fill="#0b0b0b" />
+        <circle cx="71" cy="100" r="6" fill="#efb199" /><circle cx="129" cy="100" r="6" fill="#efb199" />
+        <ellipse cx="100" cy="98" rx="28" ry="33" fill="#efb199" />
+        <path d="M69,96 C64,62 82,46 104,48 C124,50 134,66 132,96 C124,90 118,82 114,74 C100,84 84,90 69,96Z" fill="#0b0b0b" />
+        <circle cx="90" cy="102" r="2.6" fill="#0b0b0b" /><circle cx="111" cy="102" r="2.6" fill="#0b0b0b" />
+        <path d="M101,104 L99,111 Q101,113 104,111" fill="none" stroke="#0b0b0b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M92,118 Q101,125 110,118" fill="none" stroke="#0b0b0b" stroke-width="1.8" stroke-linecap="round" />
+      </symbol>
+      <symbol id="profile-avatar-a3" viewBox="0 0 200 200">
+        <rect width="200" height="200" fill="#c8a27e" />
+        <path d="M52,150 L52,100 C52,62 76,44 100,44 C124,44 148,62 148,100 L148,150Z" fill="#0b0b0b" />
+        <path d="M44,200 C48,172 72,156 100,156 C128,156 152,172 156,200Z" fill="#fff9f3" />
+        <rect x="90" y="118" width="20" height="40" fill="#e8a58a" />
+        <ellipse cx="100" cy="128" rx="13" ry="8" fill="#0b0b0b" />
+        <circle cx="71" cy="102" r="6" fill="#e8a58a" /><circle cx="129" cy="102" r="6" fill="#e8a58a" />
+        <ellipse cx="100" cy="99" rx="28" ry="33" fill="#e8a58a" />
+        <path d="M70,92 C72,70 90,62 100,62 C112,62 128,70 130,92 C118,80 106,74 98,72 C88,76 78,82 70,92Z" fill="#0b0b0b" />
+        <circle cx="88" cy="102" r="2.4" fill="#0b0b0b" /><circle cx="112" cy="102" r="2.4" fill="#0b0b0b" />
+        <circle cx="88" cy="102" r="10.5" fill="none" stroke="#0b0b0b" stroke-width="2.4" /><circle cx="112" cy="102" r="10.5" fill="none" stroke="#0b0b0b" stroke-width="2.4" />
+        <path d="M98.5,100 Q100,97 101.5,100" fill="none" stroke="#0b0b0b" stroke-width="2" />
+        <path d="M93,121 Q100,127 107,121" fill="none" stroke="#0b0b0b" stroke-width="1.8" stroke-linecap="round" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <nav class="navbar navbar-expand-lg site-nav" id="header" data-resizable-nav aria-label="Main navigation">
+    <div class="container nav-shell">
+      <a class="navbar-brand brand-lockup glow-brand" href="#home" aria-label="GlowAura home">
+        <span class="p emblem h h-emblem" aria-hidden="true"></span>
+        <span class="brand-word-lockup" aria-hidden="true"><span class="p word h h-word"></span><span class="p sub h h-sub"></span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse intro-reveal" id="navMenu">
+        <ul class="navbar-nav mx-auto nav-links">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#products" class="nav-link">Top Products</a></li>
+          <li class="nav-item"><a href="#story" class="nav-link">Glow with us</a></li>
+          <li class="nav-item nav-shop-mobile-item"><a class="nav-link" href="products.html">Shop now</a></li>
+        </ul>
+      </div>
+      <a class="nav-link nav-shop-desktop intro-reveal" href="products.html">Shop now</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="home-hero" id="home">
+      <canvas class="light-pillar-canvas" id="heroLightPillar" aria-hidden="true"></canvas>
+      <div class="container hero-grid">
+        <div class="hero-copy rv" style="--i:2">
+          <h1>No. 1 Choice <em class="stroke-text transcity-type" data-stroke-text="Luxury Beauty you can afford" role="img" aria-label="Luxury Beauty you can afford">
+            <svg class="stroke-text__svg" viewBox="0 -120 620 150" preserveAspectRatio="xMinYMid meet" aria-hidden="true">
+              <defs>
+                <linearGradient id="hero-gold-fill" gradientUnits="userSpaceOnUse" x1="0" y1="-110" x2="0" y2="18">
+                  <stop offset="0" stop-color="#fff9d8" />
+                  <stop offset=".14" stop-color="#d5a644" />
+                  <stop offset=".28" stop-color="#fff0aa" />
+                  <stop offset=".46" stop-color="#9c641b" />
+                  <stop offset=".61" stop-color="#f6d276" />
+                  <stop offset=".8" stop-color="#bd842b" />
+                  <stop offset="1" stop-color="#fff1bd" />
+                </linearGradient>
+                <linearGradient id="hero-gold-edge" gradientUnits="userSpaceOnUse" x1="0" y1="-100" x2="0" y2="14">
+                  <stop offset="0" stop-color="#fff8d2" />
+                  <stop offset=".38" stop-color="#f0c35b" />
+                  <stop offset=".72" stop-color="#8d5518" />
+                  <stop offset="1" stop-color="#ffedb0" />
+                </linearGradient>
+                <pattern id="hero-gold-facets" width="56" height="40" patternUnits="userSpaceOnUse">
+                  <path d="M8 6 11.5 2 15 6 11.5 10Z" fill="#fff7cf" opacity=".82" />
+                  <path d="M8 6h3.5v4Z" fill="#a66d20" opacity=".82" />
+                  <path d="m32 22 2.6-3.2 2.7 3.2-2.7 3.3Z" fill="#fff3bc" opacity=".76" />
+                  <path d="M32 22h2.6v3.3Z" fill="#9b651b" opacity=".8" />
+                  <path d="m47 9 1.8-2.2L51 9l-2.2 2.2Z" fill="#f9dc87" opacity=".72" />
+                  <circle cx="23" cy="13" r=".8" fill="#fff9dc" opacity=".8" />
+                  <circle cx="43" cy="34" r=".7" fill="#f9df97" opacity=".72" />
+                </pattern>
+                <filter id="hero-gold-polish" x="-12%" y="-24%" width="124%" height="158%" color-interpolation-filters="sRGB">
+                  <feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#160d08" flood-opacity=".7" result="gold-shadow" />
+                  <feSpecularLighting in="SourceAlpha" surfaceScale="2.2" specularConstant=".72" specularExponent="22" lighting-color="#fff2bc" result="gold-sheen">
+                    <feDistantLight azimuth="225" elevation="55" />
+                  </feSpecularLighting>
+                  <feComposite in="gold-sheen" in2="SourceAlpha" operator="in" result="gold-sheen-cut" />
+                  <feMerge>
+                    <feMergeNode in="gold-shadow" />
+                    <feMergeNode in="SourceGraphic" />
+                    <feMergeNode in="gold-sheen-cut" />
+                  </feMerge>
+                </filter>
+                <clipPath id="hero-stroke-text-wipe" clipPathUnits="userSpaceOnUse">
+                  <rect class="stroke-text__wipe" data-stroke-wipe x="0" y="-120" width="620" height="150" />
+                </clipPath>
+              </defs>
+              <text class="stroke-text__prelude" data-stroke-prelude x="0" y="0" xml:space="preserve" aria-hidden="true">Luxury Beauty you can afford</text>
+              <text class="stroke-text__fill" data-stroke-fill x="0" y="0" fill="url(#hero-gold-fill)" clip-path="url(#hero-stroke-text-wipe)">Luxury Beauty you can afford</text>
+              <text class="stroke-text__texture" x="0" y="0" fill="url(#hero-gold-facets)" clip-path="url(#hero-stroke-text-wipe)" aria-hidden="true">Luxury Beauty you can afford</text>
+              <text class="stroke-text__stroke" data-stroke-outline x="0" y="0" fill="none" stroke="url(#hero-gold-edge)" stroke-linejoin="round" stroke-linecap="round">Luxury Beauty you can afford</text>
+            </svg>
+          </em></h1>
+          <p class="hero-lede"></p>
+          <div class="hero-actions">
+            <a href="products.html" class="specular-button specular-button--lg specular-button--obsidian" data-specular-button data-sb-radius="15" data-sb-tint="#302326" data-sb-tint-opacity=".96" data-sb-blur="0" data-sb-text-color="#fff5e5" data-sb-line-color="#e6c98d" data-sb-base-color="#302326" data-sb-intensity="1.15" data-sb-idle-intensity="0.5" data-sb-auto-animate="true" data-sb-speed="0.48" data-sb-shine-size="16" data-sb-shine-fade="28" data-sb-thickness="2.4" data-sb-glow="1.8" data-sb-follow-mouse="true" data-sb-proximity="250" aria-label="Explore the collection"><canvas class="specular-button__light" aria-hidden="true"></canvas><span class="specular-button__label">Explore the collection</span></a>
+          </div>
+          <br>
+          <div class="hero-proof">
+            <div class="proof-avatars" role="img" aria-label="Three GlowAura community members and nine more">
+              <svg class="proof-avatar" viewBox="0 0 200 200" aria-hidden="true"><use href="#profile-avatar-a1" /></svg>
+              <svg class="proof-avatar" viewBox="0 0 200 200" aria-hidden="true"><use href="#profile-avatar-a2" /></svg>
+              <svg class="proof-avatar" viewBox="0 0 200 200" aria-hidden="true"><use href="#profile-avatar-a3" /></svg>
+              <span class="proof-avatar proof-avatar-more" aria-hidden="true">+9</span>
+            </div>
+            <div class="proof-rating" role="img" aria-label="Rated 5.0 out of 5 stars">
+              <div class="proof-rating-line"><div class="proof-stars" aria-hidden="true"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><strong class="proof-score">5.0</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual rv" style="--i:3">
+          <div class="hero-visual-frame">
+            <svg class="hero-frame-svg" viewBox="0 0 400 500" role="img" aria-label="Close-up beauty portrait with a pink rose in an ornate gilded frame">
+              <defs>
+                <linearGradient id="hero-frame-gold" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="400" y2="500">
+                  <stop offset="0" stop-color="#f7e2b4" />
+                  <stop offset=".35" stop-color="#d9b072" />
+                  <stop offset=".6" stop-color="#b98a4c" />
+                  <stop offset="1" stop-color="#8a5f33" />
+                </linearGradient>
+                <linearGradient id="hero-frame-sheen" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#fff" stop-opacity=".16" />
+                  <stop offset=".45" stop-color="#fff" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="hero-frame-highlight" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="400" y2="500">
+                  <stop offset="0" stop-color="#fff7d6" stop-opacity=".9" />
+                  <stop offset=".28" stop-color="#fff" stop-opacity=".12" />
+                  <stop offset=".58" stop-color="#ffe7a8" stop-opacity=".72" />
+                  <stop offset="1" stop-color="#6b4423" stop-opacity=".28" />
+                </linearGradient>
+                <path id="hero-frame-inner" d="M200,62 C290,62 350,100 350,170 L350,330 C350,400 290,438 200,438 C110,438 50,400 50,330 L50,170 C50,100 110,62 200,62 Z" />
+                <clipPath id="hero-frame-shape"><use href="#hero-frame-inner" /></clipPath>
+                <filter id="hero-frame-soft" filterUnits="userSpaceOnUse" x="-20" y="-20" width="440" height="540">
+                  <feGaussianBlur stdDeviation="8" />
+                </filter>
+                <filter id="hero-frame-relief" filterUnits="userSpaceOnUse" x="-20" y="-20" width="440" height="540" color-interpolation-filters="sRGB">
+                  <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur" />
+                  <feDiffuseLighting in="blur" surfaceScale="6" diffuseConstant="1.3" lighting-color="#fff" result="diff">
+                    <feDistantLight azimuth="225" elevation="55" />
+                  </feDiffuseLighting>
+                  <feComposite in="diff" in2="SourceAlpha" operator="in" result="diffIn" />
+                  <feBlend in="SourceGraphic" in2="diffIn" mode="multiply" result="lit" />
+                  <feSpecularLighting in="blur" surfaceScale="6" specularConstant="1.2" specularExponent="26" lighting-color="#fff6dc" result="spec">
+                    <feDistantLight azimuth="225" elevation="45" />
+                  </feSpecularLighting>
+                  <feComposite in="spec" in2="SourceAlpha" operator="in" result="specIn" />
+                  <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="4" result="noise" />
+                  <feColorMatrix in="noise" type="matrix" values="0 0 0 0 .22  0 0 0 0 .13  0 0 0 0 .05  0 0 0 .5 -.08" result="grain" />
+                  <feComposite in="grain" in2="SourceAlpha" operator="in" result="grainIn" />
+                  <feMerge><feMergeNode in="lit" /><feMergeNode in="specIn" /><feMergeNode in="grainIn" /></feMerge>
+                </filter>
+                <g id="hero-frame-leaf">
+                  <path d="M0,0 C3,-9 15,-13 28,-8 C23,2 11,6 0,0Z" fill="url(#hero-frame-gold)" stroke="#6b4423" stroke-width=".8" />
+                  <path d="M2,-1 C10,-4 18,-6 25,-7" fill="none" stroke="#6b4423" stroke-width=".9" opacity=".7" />
+                </g>
+                <g id="hero-frame-flower" stroke="#6b4423" stroke-width=".8" fill="url(#hero-frame-gold)">
+                  <g>
+                    <ellipse cx="0" cy="-10" rx="4.6" ry="9" />
+                    <ellipse cx="0" cy="-10" rx="4.6" ry="9" transform="rotate(45)" />
+                    <ellipse cx="0" cy="-10" rx="4.6" ry="9" transform="rotate(90)" />
+                    <ellipse cx="0" cy="-10" rx="4.6" ry="9" transform="rotate(135)" />
+                    <ellipse cx="0" cy="-10" rx="4.6" ry="9" transform="rotate(180)" />
+                    <ellipse cx="0" cy="-10" rx="4.6" ry="9" transform="rotate(225)" />
+                    <ellipse cx="0" cy="-10" rx="4.6" ry="9" transform="rotate(270)" />
+                    <ellipse cx="0" cy="-10" rx="4.6" ry="9" transform="rotate(315)" />
+                  </g>
+                  <g transform="rotate(22) scale(.62)">
+                    <ellipse cx="0" cy="-10" rx="4.6" ry="9" />
+                    <ellipse cx="0" cy="-10" rx="4.6" ry="9" transform="rotate(72)" />
+                    <ellipse cx="0" cy="-10" rx="4.6" ry="9" transform="rotate(144)" />
+                    <ellipse cx="0" cy="-10" rx="4.6" ry="9" transform="rotate(216)" />
+                    <ellipse cx="0" cy="-10" rx="4.6" ry="9" transform="rotate(288)" />
+                  </g>
+                  <circle r="3.2" />
+                </g>
+                <g id="hero-frame-arm" fill="none" stroke="url(#hero-frame-gold)" stroke-width="6" stroke-linecap="round">
+                  <path d="M96,38 C122,46 140,24 164,30 C178,34 172,48 160,44" />
+                  <path stroke-width="3.5" d="M108,44 C132,58 150,54 170,64" />
+                  <use href="#hero-frame-leaf" transform="translate(104 38) rotate(-38)" />
+                  <use href="#hero-frame-leaf" transform="translate(128 38) rotate(-62) scale(.85)" />
+                  <use href="#hero-frame-leaf" transform="translate(118 50) rotate(48) scale(.8)" />
+                  <use href="#hero-frame-leaf" transform="translate(146 52) rotate(40) scale(.7)" />
+                  <circle cx="172" cy="65" r="3.6" fill="url(#hero-frame-gold)" stroke="#6b4423" stroke-width=".7" />
+                  <circle cx="178" cy="58" r="2.6" fill="url(#hero-frame-gold)" stroke="#6b4423" stroke-width=".7" />
+                </g>
+                <g id="hero-frame-corner">
+                  <use href="#hero-frame-arm" />
+                  <use href="#hero-frame-arm" transform="matrix(0 1 1 0 0 0)" />
+                  <path d="M96,38 C70,28 38,40 36,66 C34,90 62,98 78,82 C90,70 80,52 64,56 C56,58 54,68 62,70" fill="none" stroke="url(#hero-frame-gold)" stroke-width="7" stroke-linecap="round" />
+                  <use href="#hero-frame-leaf" transform="translate(62 30) rotate(-170) scale(.9)" />
+                  <use href="#hero-frame-leaf" transform="translate(40 86) rotate(100) scale(.8)" />
+                  <use href="#hero-frame-flower" transform="translate(24 24) scale(1.15)" />
+                </g>
+                <g id="hero-frame-mid" fill="none" stroke="url(#hero-frame-gold)" stroke-width="5" stroke-linecap="round">
+                  <path fill="url(#hero-frame-gold)" stroke="#6b4423" stroke-width=".8" d="M0,-16 C-8,-7 -8,5 0,13 C8,5 8,-7 0,-16Z" />
+                  <path d="M0,10 C-10,15 -22,9 -26,-3 C-28,-10 -20,-12 -18,-6" />
+                  <path d="M0,10 C10,15 22,9 26,-3 C28,-10 20,-12 18,-6" />
+                  <circle cx="0" cy="-2" r="2.6" fill="#6b4423" stroke="none" opacity=".6" />
+                </g>
+              </defs>
+
+              <use href="#hero-frame-inner" fill="#2a1b22" />
+              <g clip-path="url(#hero-frame-shape)">
+                <image href="img/SAMPLE2.jpg" x="50" y="62" width="300" height="376" preserveAspectRatio="xMidYMid slice" />
+                <rect x="40" y="52" width="320" height="396" fill="url(#hero-frame-sheen)" />
+                <use href="#hero-frame-inner" fill="none" stroke="#000" stroke-width="26" opacity=".6" filter="url(#hero-frame-soft)" />
+              </g>
+              <g filter="url(#hero-frame-relief)">
+                <use href="#hero-frame-inner" fill="none" stroke="url(#hero-frame-gold)" stroke-width="15" />
+                <use href="#hero-frame-inner" fill="none" stroke="url(#hero-frame-gold)" stroke-width="5" stroke-linecap="round" stroke-dasharray="0 10.5" transform="translate(200 250) scale(1.065) translate(-200 -250)" />
+                <use href="#hero-frame-inner" fill="none" stroke="url(#hero-frame-gold)" stroke-width="3.5" transform="translate(200 250) scale(1.1) translate(-200 -250)" />
+                <use href="#hero-frame-corner" />
+                <use href="#hero-frame-corner" transform="translate(400 0) scale(-1 1)" />
+                <use href="#hero-frame-corner" transform="translate(0 500) scale(1 -1)" />
+                <use href="#hero-frame-corner" transform="translate(400 500) scale(-1 -1)" />
+                <use href="#hero-frame-mid" transform="translate(200 34)" />
+                <use href="#hero-frame-mid" transform="translate(200 466) rotate(180)" />
+                <use href="#hero-frame-mid" transform="translate(22 250) rotate(-90)" />
+                <use href="#hero-frame-mid" transform="translate(378 250) rotate(90)" />
+              </g>
+              <use href="#hero-frame-inner" fill="none" stroke="url(#hero-frame-highlight)" stroke-width="2.4" stroke-linecap="round" opacity=".82" />
+              <use href="#hero-frame-inner" fill="none" stroke="#fff4c4" stroke-width=".8" opacity=".28" transform="translate(200 250) scale(1.025) translate(-200 -250)" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block edit-section" id="products">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <div>
+            <h2>A glance at our <em class="transcity-type">top products.</em></h2>
+          </div>
+        </div>
+
+        <div class="flex-carousel" data-flex-carousel data-flex-preset="liquid" data-flex-fit="natural" role="region" aria-roledescription="carousel" aria-label="GlowAura featured products" tabindex="0">
+          <div class="flex-carousel__caption" aria-live="polite">
+            <div class="flex-carousel__caption-copy">
+              <h3 class="flex-carousel__title" data-carousel-title>Vitamin C Serum</h3>
+              <span class="flex-carousel__caption-price"><del data-carousel-compare>₱899</del><strong data-carousel-price>₱699</strong></span>
+              <p class="flex-carousel__blurb" data-carousel-blurb>A fresh start for tired-looking skin.</p>
+              <a class="flex-carousel__shop" href="products.html">Shop now</a>
+            </div>
+          </div>
+          <div class="flex-carousel__viewport" data-flex-viewport>
+            <div class="flex-carousel__track" data-flex-track>
+              <article class="flex-carousel__card" data-carousel-card data-kicker="Riche · Serum" data-title="Vitamin C Serum" data-price="₱699" data-compare="₱899" data-blurb="A fresh start for tired-looking skin.">
+                <a href="products.html" class="flex-carousel__media" aria-label="View Vitamin C Serum">
+                  <img src="img/products/vitamin.jpg" alt="Vitamin C Serum" />
+                  <span class="flex-carousel__label">15.1k sold</span>
+                  <span class="flex-carousel__rating" aria-label="Rated 5.0 out of 5"><span class="flex-carousel__rating-stars" aria-hidden="true">★★★★★</span><strong>5.0</strong></span>
+                </a>
+              </article>
+              <article class="flex-carousel__card" data-carousel-card data-kicker="Skin Proud · Moisturizer" data-title="Daily Moisturizer" data-price="₱549" data-compare="₱699" data-blurb="Lightweight comfort with all-day softness.">
+                <a href="products.html" class="flex-carousel__media" aria-label="View Daily Moisturizer">
+                  <img src="img/products/DailyMoisturizer.jpg" alt="Daily Moisturizer" />
+                  <span class="flex-carousel__label">12.8k sold</span>
+                  <span class="flex-carousel__rating" aria-label="Rated 5.0 out of 5"><span class="flex-carousel__rating-stars" aria-hidden="true">★★★★★</span><strong>5.0</strong></span>
+                </a>
+              </article>
+              <article class="flex-carousel__card" data-carousel-card data-kicker="Rose Inc · Moisturizer" data-title="Rose Renewal" data-price="₱799" data-compare="₱949" data-blurb="A quiet evening ritual in a jar.">
+                <a href="products.html" class="flex-carousel__media" aria-label="View Rose Renewal Moisturizer">
+                  <img src="img/products/rose-renewal.jpg" alt="Rose Renewal Moisturizer" />
+                  <span class="flex-carousel__label">9.4k sold</span>
+                  <span class="flex-carousel__rating" aria-label="Rated 5.0 out of 5"><span class="flex-carousel__rating-stars" aria-hidden="true">★★★★★</span><strong>5.0</strong></span>
+                </a>
+              </article>
+              <article class="flex-carousel__card" data-carousel-card data-kicker="Medicube · Serum" data-title="Glow Booster" data-price="₱899" data-compare="₱999" data-blurb="A multi-peptide boost for instant luminosity.">
+                <a href="products.html" class="flex-carousel__media" aria-label="View Glow Booster Serum">
+                  <img src="img/products/glow-booster.jpg" alt="Glow Booster Serum" />
+                  <span class="flex-carousel__label">18.6k sold</span>
+                  <span class="flex-carousel__rating" aria-label="Rated 5.0 out of 5"><span class="flex-carousel__rating-stars" aria-hidden="true">★★★★★</span><strong>5.0</strong></span>
+                </a>
+              </article>
+              <article class="flex-carousel__card" data-carousel-card data-kicker="Torriden · Moisturizer" data-title="Hydra Cloud" data-price="₱629" data-compare="₱749" data-blurb="Featherlight hydration that lasts all day.">
+                <a href="products.html" class="flex-carousel__media" aria-label="View Hydra Cloud Moisturizer">
+                  <img src="img/products/hydra-cloud.jpg" alt="Hydra Cloud Moisturizer" />
+                  <span class="flex-carousel__label">11.2k sold</span>
+                  <span class="flex-carousel__rating" aria-label="Rated 5.0 out of 5"><span class="flex-carousel__rating-stars" aria-hidden="true">★★★★★</span><strong>5.0</strong></span>
+                </a>
+              </article>
+              <article class="flex-carousel__card" data-carousel-card data-kicker="Tatcha · Cleanser" data-title="Balancing Gel" data-price="₱539" data-compare="₱649" data-blurb="A pH-balanced cleanse without the tight feeling.">
+                <a href="products.html" class="flex-carousel__media" aria-label="View Balancing Gel Cleanser">
+                  <img src="img/products/balance-gel.jpg" alt="Balancing Gel Cleanser" />
+                  <span class="flex-carousel__label">7.9k sold</span>
+                  <span class="flex-carousel__rating" aria-label="Rated 5.0 out of 5"><span class="flex-carousel__rating-stars" aria-hidden="true">★★★★★</span><strong>5.0</strong></span>
+                </a>
+              </article>
+              <article class="flex-carousel__card" data-carousel-card data-kicker="Glamfox · Treatment" data-title="Smoothing Eye Cream" data-price="₱399" data-compare="₱499" data-blurb="A soft, refreshing ritual for the eye area.">
+                <a href="products.html" class="flex-carousel__media" aria-label="View Smoothing Eye Cream">
+                  <img src="img/products/eye-cream.jpg" alt="Smoothing Eye Cream" />
+                  <span class="flex-carousel__label">6.3k sold</span>
+                  <span class="flex-carousel__rating" aria-label="Rated 5.0 out of 5"><span class="flex-carousel__rating-stars" aria-hidden="true">★★★★★</span><strong>5.0</strong></span>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-slideshow-section section-block" id="story">
+      <div class="container">
+        <div class="story-slideshow" data-story-slideshow role="region" aria-roledescription="carousel" aria-label="The GlowAura story" tabindex="0">
+          <div class="story-slideshow__stage">
+            <article class="story-slideshow__slide story-slideshow__slide--ritual is-active" data-story-slide role="group" aria-roledescription="slide" aria-label="1 of 2" aria-hidden="false">
+              <div class="ritual-grid">
+                <div class="ritual-image-wrap">
+                  <img src="img/BG.jpg" alt="Three women with different hair textures" class="ritual-image" />
+                </div>
+                <div class="ritual-copy">
+                  <h2>There is no single way to look <em class="transcity-type">radiant.</em></h2>
+                  <p>GlowAura began with a simple idea: beauty should feel like a return to yourself, not another thing to keep up with.</p>
+                  <p>So we collect feel-good essentials that fit real mornings, slow evenings, and every version of you in between.</p>
+                </div>
+              </div>
+            </article>
+            <article class="story-slideshow__slide story-slideshow__slide--card" data-story-slide role="group" aria-roledescription="slide" aria-label="2 of 2" aria-hidden="true" inert>
+              <div class="story-card">
+                <div class="story-card-image"><img src="img/about2.jpg" alt="Three diverse faces in profile" /></div>
+                <div class="story-card-copy">
+                  <h2>Glow is a feeling you can <em class="transcity-type">keep.</em></h2>
+                  <p>From the first cleanse to the last spritz, every product is an invitation to slow down and notice yourself.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <a class="brand-lockup footer-brand glow-brand" href="#home" aria-label="GlowAura home"><span class="p emblem"></span><span class="brand-word-lockup"><span class="p word"></span><span class="p sub"></span></span></a>
+      <div class="footer-links"><a href="#products">Top Products</a><a href="#story">Glow with us</a><a href="products.html">Shop now</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2025 GlowAura</span><span class="site-note">Static website mockup</span></div>
+  </footer>
+
+  <script src="js/glow-intro.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/resizable-nav.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/button-effects.js"></script>
+  <script src="js/specular-button.js"></script>
+  <script src="js/light-pillar.js"></script>
+  <script src="js/stroke-text.js"></script>
+  <script src="js/flex-carousel.js"></script>
+  <script src="js/story-slideshow.js"></script>
+  <script>
+    function startPageMotion() {
+    if (window.AOS) {
+      AOS.init({ duration: 1000, once: true, offset: 80 });
+      document.body.classList.add('aos-ready');
+    }
+    }
+    if (document.body.classList.contains('intro-lock')) {
+      document.addEventListener('glow-intro-complete', startPageMotion, { once: true });
+    } else { startPageMotion(); }
+  </script>
+</body>
+</html>
